@@ -3,7 +3,6 @@ from db_config import mysql
 from app import app
 from flask import jsonify
 
-
 @app.route('/states')
 def users():
     result={}
@@ -21,8 +20,6 @@ def users():
                 'District':row['district'],
                 'Pincode':row['pincode']
             }
-
-
             if(state not in result):
                 list = []
             else:
@@ -36,8 +33,6 @@ def users():
     finally:
         cursor.close()
         conn.close()
-
-
     res_list = []
 
     for key in result:
@@ -48,7 +43,6 @@ def users():
         res_list.append(state_data)
     
     result_data = {'data' : res_list}
-
     return jsonify(result_data)
 
 if __name__ == "__main__":
