@@ -1,0 +1,11 @@
+Github Repo - https://github.com/PriyaSingh01mar/Assignment
+
+Application Setup
+
+requirements
+1 - python 3
+2 - webApp using flask and other libraries
+3 - mysql setup on Local
+
+DB
+1 -  Sql dump is being attached in the github repo itself.
